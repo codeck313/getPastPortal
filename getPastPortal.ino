@@ -60,7 +60,7 @@ void getPortal(String url)
     http.addHeader("Origin", "http://172.16.0.2:8090");
     // if (httpCode > 0)
     // { //Check the returning code
-    http.POST("mode=191&username="+useraname+"&password="+password+"&a=1581937216630&producttype=0");
+    http.POST("mode=191&username="+username+"&password="+password+"&a=1581937216630&producttype=0");
     String payload = http.getString(); //Get the response payload
     Serial.println(payload);
     http.end();
